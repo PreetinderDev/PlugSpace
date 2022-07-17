@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#B0B0B0"
+        android:textSize="14sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/action_button_bs"
+        android:layout_marginTop="12dp"
+        android:text="@string/save_profile" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/btn_report"
+        style="@style/action_button_bs"
+        android:layout_marginTop="12dp"
+        android:text="@string/report_profile"
+        android:textAllCaps="false" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/btn_remove"
+        style="@style/action_button_bs"
+        android:layout_marginTop="12dp"
+        android:text="@string/remove_profile" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/action_button_bs"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="Cancel"
+        android:textStyle="bold"/>
+</LinearLayout>

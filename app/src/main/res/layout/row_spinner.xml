@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.plugspace.view.CustomTextView
+        android:padding="@dimen/_10sdp"
+        style="@style/CustomTextViewStyle"
+        android:id="@+id/tvSpinner"
+        android:singleLine="true"
+        android:gravity="start"
+        android:text="@string/_5_0_ft"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:font_text="@string/font_times_regular" />
+
+</LinearLayout>

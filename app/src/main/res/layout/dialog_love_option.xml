@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/select_an_option"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@color/colorPrimary" />
+<!--    <TextView-->
+<!--        android:id="@+id/send_msg"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:padding="@dimen/_10sdp"-->
+<!--        android:text="@string/send_a_message"-->
+<!--        android:textColor="@color/colorBlack"-->
+<!--        android:textStyle="bold" />-->
+
+    <Button
+        android:id="@+id/send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:text="@string/send_a_message"
+        android:textColor="@color/colorBlack"
+        android:backgroundTint="@color/colorLightOrange"
+        android:textAllCaps="false" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvMatch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:paddingStart="@dimen/_10sdp"-->
+<!--        android:paddingTop="@dimen/_10sdp"-->
+<!--        android:paddingEnd="@dimen/_10sdp"-->
+<!--        android:paddingBottom="@dimen/_10sdp"-->
+<!--        android:text="@string/go_to_match_screen"-->
+<!--        android:textColor="@color/colorBlack"-->
+<!--        android:textStyle="bold" />-->
+
+    <Button
+        android:id="@+id/tvMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/go_to_match_screen"
+        android:textColor="@color/colorBlack"
+        android:backgroundTint="@color/colorLightOrange"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/cancel"
+        android:textAllCaps="false" />
+
+</LinearLayout>

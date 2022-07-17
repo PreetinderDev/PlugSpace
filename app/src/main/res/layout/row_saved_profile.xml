@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rivSavedProfileImg"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_post20"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvSavedProfileName"
+                style="@style/CustomTextViewStyle"
+                android:gravity="start"
+                tools:text="Kylie, 28"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:font_text="@string/font_times_bold" />
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvSavedProfileDes"
+                style="@style/CustomTextViewStyle"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:singleLine="false"
+                tools:text="Coach at Lilly"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_12ssp"
+                app:font_text="@string/font_times_regular" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorLightGray" />
+
+</LinearLayout>

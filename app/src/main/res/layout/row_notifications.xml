@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.plugspace.adapters.NotificationsAdapter">
+
+    <com.plugspace.view.CustomTextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        app:font_text="@string/font_times_bold"
+        tools:text="12/28/2020 (MM/DD/YYYY)" />
+
+    <LinearLayout
+        android:id="@+id/llMainClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rivNotificationImg"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_post20"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvTime"
+                style="@style/CustomTextViewStyle"
+                android:gravity="start"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_12ssp"
+                app:font_text="@string/font_times_regular"
+                tools:text="5h ago" />
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNotificationText"
+                style="@style/CustomTextViewStyle"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:singleLine="false"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/_12ssp"
+                app:font_text="@string/font_times_regular"
+                tools:text="\@Matheus" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorLightGray" />
+
+</LinearLayout>

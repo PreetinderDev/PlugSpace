@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.AddDescriptionActivity"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.plugspace.view.CustomTextView
+            style="@style/CustomTextViewStyle"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="start"
+            android:singleLine="false"
+            android:text="@string/add_description"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_20ssp"
+            app:font_text="@string/font_times_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:outlineSpotShadowColor="@color/colorOrange"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:orientation="horizontal">
+
+                    <com.plugspace.view.CustomEditText
+                        android:id="@+id/etAddDes"
+                        style="@style/CustomEditTextStyle"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/type_your_msg"
+                        android:inputType="textMultiLine"
+                        android:lines="10"
+                        android:maxLines="10"
+                        android:minLines="10"
+                        android:singleLine="false"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <com.plugspace.view.CustomButton
+            android:id="@+id/btnDone"
+            style="@style/CustomButtonStyle"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/done" />
+    </LinearLayout>
+
+</LinearLayout>

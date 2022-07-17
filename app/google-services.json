@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "739747360075",
+    "firebase_url": "https://plugspace-app-default-rtdb.firebaseio.com",
+    "project_id": "plugspace-app",
+    "storage_bucket": "plugspace-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739747360075:android:b3315a5c8412d6359c4cce",
+        "android_client_info": {
+          "package_name": "com.plugspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739747360075-5pn257tigt0ldq4vb116hu4k1qo1a555.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBag8xunAktoVB-BSrhGuqWGEEjlS8D88A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739747360075-5pn257tigt0ldq4vb116hu4k1qo1a555.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "739747360075-u3ejlq49pp7ie0qsmf54ru99o9qfieoe.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.APIdemo.demo.INferface"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

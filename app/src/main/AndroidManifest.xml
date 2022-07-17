@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.plugspace">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".PlugSpaceApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:targetApi="q">
+        <activity
+            android:name=".Kaler_stpry"
+            android:exported="false" />
+        <activity
+            android:name=".preet_story_view"
+            android:exported="false" />
+        <activity
+            android:name=".customCamera.activity.VideoCameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.StatusCopyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".test.TestStoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.WelcomeVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VerifyOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SubscriptionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PlugspaceRankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ViewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChattingMsgActivity"
+            android:configChanges="keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FAQsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MusicFavCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MusicListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.StatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Kaler_stpry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PreetStoryView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity"
+            android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

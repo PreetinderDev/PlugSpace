@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.SubscriptionsActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.plugspace.view.CustomTextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:text="@string/choose_your_plan"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/_18ssp"
+                app:font_text="@string/font_times_bold" />
+
+            <com.plugspace.view.CustomTextView
+                style="@style/CustomTextViewStyle"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:singleLine="false"
+                android:text="@string/lorem_ipsum"
+                android:textSize="@dimen/_14ssp"
+                app:font_text="@string/font_times_regular" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSubscriptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:overScrollMode="never"
+                tools:itemCount="3"
+                tools:listitem="@layout/row_subscriptions" />
+
+            <com.plugspace.view.CustomButton
+                android:id="@+id/btnContinue"
+                style="@style/CustomButtonStyle"
+                android:layout_margin="@dimen/_15sdp"
+                android:text="@string/continues" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_16sdp"
+    android:background="@drawable/white_10sdp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    tools:context=".activities.BaseActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_match_profile"
+        tools:ignore="ContentDescription" />
+
+    <com.plugspace.view.CustomTextView
+        style="@style/CustomTextViewStyle"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:fontFamily="@font/font_bold_times"
+        android:text="@string/lbl_it_s_a_matched"
+        android:textColor="@color/colorOrange"
+        android:textSize="@dimen/_22ssp" />
+
+    <com.plugspace.view.CustomTextView
+        android:id="@+id/tvMessage"
+        style="@style/CustomTextViewStyle"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:singleLine="false"
+        android:textSize="@dimen/_12ssp"
+        tools:text="@string/msg_you_and_s_have_liked_each_other" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <com.plugspace.view.CustomButton
+            android:id="@+id/btnCancel"
+            style="@style/CustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:background="@drawable/orange_border_10sdp"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/colorOrange" />
+
+        <com.plugspace.view.CustomButton
+            android:id="@+id/btnMessage"
+            style="@style/CustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:text="@string/btn_message"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".activities.WelcomeVideoActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_64sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_app_logo"
+            tools:ignore="ContentDescription" />
+
+
+        <com.plugspace.view.CustomTextView
+            style="@style/CustomTextViewStyle"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="@string/prioritize_yourself_and_"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_22ssp"
+            app:font_text="@string/font_times_bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_48sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.plugspace.view.CustomButton
+            android:id="@+id/btnLogin"
+            style="@style/CustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/login" />
+
+        <View
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="match_parent" />
+
+        <com.plugspace.view.CustomButton
+            android:id="@+id/btnSignUp"
+            style="@style/CustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_border_10sdp"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

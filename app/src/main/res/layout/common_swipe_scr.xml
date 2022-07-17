@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber1"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_1" />
+
+            <ImageView
+                android:id="@+id/ivGrayBg1"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber2"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_2" />
+
+            <ImageView
+                android:id="@+id/ivGrayBg2"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber3"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_2" />
+
+            <ImageView
+                android:id="@+id/ivGrayBg3"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber4"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_2" />
+
+            <ImageView
+                android:id="@+id/ivGrayBg4"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivGrayBg5"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border" />
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber5"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_2" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber6"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_2" />
+
+            <ImageView
+                android:id="@+id/ivGrayBg6"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber7"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_2" />
+
+            <ImageView
+                android:id="@+id/ivGrayBg7"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber8"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_2" />
+
+            <ImageView
+                android:id="@+id/ivGrayBg8"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber9"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_2" />
+
+            <ImageView
+                android:id="@+id/ivGrayBg9"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:background="@color/colorGray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvNumber10"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_green_dot"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_2" />
+
+            <ImageView
+                android:id="@+id/ivGrayBg10"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/gray_round_border" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

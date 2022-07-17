@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/shape_rect_gradient_edit_text"
+        android:elevation="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.plugspace.view.CustomTextView
+            style="@style/CustomTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:singleLine="false"
+            android:text="@string/title_select_option"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:font_text="@string/font_times_bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:background="@color/colorPrimary" />
+
+        <com.plugspace.view.CustomTextView
+            android:id="@+id/tvCapturePhoto"
+            style="@style/CustomTextViewStyle"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@drawable/shape_ripple_effect"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            android:text="@string/hint_take_photo"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.plugspace.view.CustomTextView
+            android:id="@+id/tvCaptureVideo"
+            style="@style/CustomTextViewStyle"
+            android:layout_marginBottom="@dimen/_2sdp"
+
+            android:background="@drawable/shape_ripple_effect"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/hint_take_video"
+            android:textSize="@dimen/_12ssp" />
+
+        <!--  <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_1sdp"
+              android:background="@color/colorDisable" />-->
+
+        <com.plugspace.view.CustomTextView
+            android:id="@+id/tvSelectPhotoGallery"
+            style="@style/CustomTextViewStyle"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@drawable/shape_ripple_effect"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/hint_select_photo_gallery"
+            android:textSize="@dimen/_12ssp" />
+
+        <!--  <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_1sdp"
+              android:background="@color/colorDisable" />-->
+
+
+
+        <com.plugspace.view.CustomTextView
+            android:id="@+id/tvSelectVideoGallery"
+            style="@style/CustomTextViewStyle"
+            android:layout_marginBottom="@dimen/_2sdp"
+
+            android:background="@drawable/shape_ripple_effect"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/hint_select_video_gallery"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.plugspace.view.CustomTextView
+            android:id="@+id/tvCancel"
+            style="@style/CustomTextViewStyle"
+            android:background="@drawable/shape_ripple_effect"
+
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:id="@+id/llClose"
+         android:layout_width="@dimen/_30sdp"
+         android:layout_height="@dimen/_30sdp"
+         android:layout_margin="@dimen/_12sdp"
+         android:background="@drawable/shape_rect_back"
+         android:elevation="@dimen/_8sdp"
+         android:padding="@dimen/_10sdp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent">
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_close" />
+     </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

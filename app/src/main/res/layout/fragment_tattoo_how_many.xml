@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".fragment.TattooFragment">
+
+    <com.plugspace.view.CustomTextView
+        style="@style/CustomTextViewStyle"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="start"
+        android:singleLine="false"
+        android:text="@string/how_many_tattoo_are_on_your_body"
+        android:textSize="@dimen/_20ssp"
+        app:font_text="@string/font_times_bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHowManyTattoo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        tools:itemCount="5"
+        tools:listitem="@layout/row_height" />
+
+    <com.plugspace.view.CustomButton
+        android:id="@+id/btnNext"
+        style="@style/CustomButtonStyle"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="@string/next" />
+
+</LinearLayout>

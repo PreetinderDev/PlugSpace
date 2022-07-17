@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:orientation="vertical"
+    tools:context="com.plugspace.adapters.PostPreviewAdapter">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_365sdp">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/ivPreviewImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_place_holder_photo"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/ivReport"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_8sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_report"
+                android:tint="@color/colorWhite"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.plugspace.view.CustomTextView
+        android:id="@+id/tvPreviewDes"
+        style="@style/CustomTextViewStyle"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="start"
+        android:textSize="@dimen/_14ssp"
+        android:visibility="gone"
+        app:font_text="@string/font_times_regular"
+        tools:text="Like if…" />
+
+</LinearLayout>

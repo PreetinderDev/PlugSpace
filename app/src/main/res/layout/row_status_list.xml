@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_place_holder_photo"
+    tools:context="com.plugspace.adapters.StatusAdapter">
+
+    <RelativeLayout
+        android:id="@+id/rlStory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <!--        <com.google.android.exoplayer2.ui.SimpleExoPlayerView-->
+        <!--            android:id="@+id/videoView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            app:use_controller="false" />-->
+
+        <ImageView
+            android:id="@+id/ivStatusImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/bg_place_holder_photo" />
+
+    </RelativeLayout>
+
+</LinearLayout>

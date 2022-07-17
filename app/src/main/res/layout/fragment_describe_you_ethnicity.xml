@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".fragment.DescribeYouEthnicityFragment">
+
+    <com.plugspace.view.CustomTextView
+        style="@style/CustomTextViewStyle"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="start"
+        android:singleLine="false"
+        android:text="@string/which_ethnicity_best_describe_you"
+        android:textSize="@dimen/_20ssp"
+        app:font_text="@string/font_times_bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDescribeYouEthnicity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        tools:itemCount="5" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvOthers"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:outlineSpotShadowColor="@color/colorOrange"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp">
+
+            <LinearLayout
+                android:id="@+id/llOthers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/white_10sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_15sdp">
+
+                <com.plugspace.view.CustomTextView
+                    android:id="@+id/tvOthers"
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/others"
+                    android:textSize="@dimen/_13ssp"
+                    app:font_text="@string/font_times_regular" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.plugspace.view.CustomButton
+        android:id="@+id/btnNext"
+        style="@style/CustomButtonStyle"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="@string/next" />
+
+</LinearLayout>

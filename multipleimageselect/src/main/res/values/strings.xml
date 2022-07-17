@@ -1,0 +1,18 @@
+<resources>
+    <string name="album_view">Select Photos</string>
+    <string name="image_view">Tap to select photos</string>
+
+    <string name="add">ADD</string>
+    <string name="selected">selected</string>
+    <string name="limit_exceeded">Can select a maximum of %d photos</string>
+
+    <string name="error_null_cursor">Oops, something went wrong!</string>
+
+    <!--Request Permission-->
+    <string name="permission_info">App requires permission to Storage to view photos.</string>
+    <string name="permission_force">App requires permission to Storage to view photos. Tap Settings and go to Permissions to grant permission.</string>
+    <string name="permission_ok">OK</string>
+    <string name="permission_settings">Settings</string>
+    <string name="permission_package">package</string>
+
+</resources>

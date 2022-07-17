@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".fragment.WeightFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.plugspace.view.CustomTextView
+                style="@style/CustomTextViewStyle"
+                android:gravity="start"
+                android:text="@string/weight"
+                android:textSize="@dimen/_20ssp"
+                app:font_text="@string/font_times_bold" />
+
+
+            <com.plugspace.view.CustomTextView
+                style="@style/CustomTextViewStyle"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="start"
+                android:text="@string/what_is_your_weight"
+                android:textSize="@dimen/_15ssp"
+                app:font_text="@string/font_times_regular" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_weight"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSlcHeight"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        tools:listitem="@layout/row_height" />
+
+</LinearLayout>

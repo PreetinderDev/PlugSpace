@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".fragment.JobTitleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.plugspace.view.CustomTextView
+            style="@style/CustomTextViewStyle"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="start"
+            android:text="@string/what_s_your_job_title"
+            android:textSize="@dimen/_20ssp"
+            app:font_text="@string/font_times_bold" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSlcBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:outlineSpotShadowColor="@color/colorOrange"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:background="@drawable/white_bg_10sdp_with_orange_border"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.plugspace.view.CustomEditText
+                        android:id="@+id/etJobTitle"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_15sdp"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:text=""
+                        style="@style/CustomEditTextStyle"
+                        android:hint="@string/enter_job_title" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <com.plugspace.view.CustomButton
+            android:id="@+id/btnNext"
+            style="@style/CustomButtonStyle"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/next" />
+    </LinearLayout>
+
+</LinearLayout>

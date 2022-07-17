@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.plugspace.fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_search"
+                tools:ignore="ContentDescription" />
+
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_notification"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llMyStory"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="@dimen/_10sdp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:visibility="gone"-->
+<!--            tools:visibility="visible"-->
+<!--            >-->
+
+<!--            <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                android:id="@+id/rivMyProfileImg"-->
+<!--                android:layout_width="@dimen/_50sdp"-->
+<!--                android:layout_height="@dimen/_50sdp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/round_orange_border"-->
+<!--                android:padding="@dimen/_3sdp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/ic_post13"-->
+<!--                app:riv_oval="true" />-->
+
+<!--            <com.plugspace.view.CustomTextView-->
+<!--                android:id="@+id/tvMyName"-->
+<!--                style="@style/CustomTextViewStyle"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:text="@string/your_story"-->
+<!--                android:textSize="@dimen/_10ssp"-->
+<!--                app:font_text="@string/font_times_regular" />-->
+
+<!--        </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                tools:itemCount="1"
+                tools:listitem="@layout/row_story" />
+
+            <include layout="@layout/common_empty_list" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/llSearch"-->
+    <!--        android:layout_width="@dimen/_110sdp"-->
+    <!--        android:layout_height="@dimen/_40sdp"-->
+    <!--        android:background="@drawable/light_orange_bg_10sdp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:visibility="gone"-->
+    <!--        tools:visibility="visible"-->
+    <!--        >-->
+
+    <!--        <com.plugspace.view.CustomEditText-->
+    <!--            android:id="@+id/etSearch"-->
+    <!--            style="@style/CustomEditTextStyle"-->
+    <!--            android:layout_width="@dimen/_80sdp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:background="@null"-->
+    <!--            android:hint="@string/search"-->
+    <!--            android:imeOptions="actionDone"-->
+    <!--            android:inputType="text"-->
+    <!--            android:padding="@dimen/_10sdp"-->
+    <!--            android:textSize="@dimen/_11ssp"-->
+    <!--            android:visibility="visible"-->
+    <!--            tools:text="" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/ivSearchUser"-->
+    <!--            android:layout_width="@dimen/_20sdp"-->
+    <!--            android:layout_height="@dimen/_20sdp"-->
+    <!--            android:layout_gravity="end|center"-->
+    <!--            android:layout_marginStart="@dimen/_5sdp"-->
+    <!--            android:padding="@dimen/_5sdp"-->
+    <!--            android:src="@drawable/ic_search_gray" />-->
+
+    <!--    </LinearLayout>-->
+    <RelativeLayout
+        android:id="@+id/rlShowSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/light_orange_bg_10sdp">
+
+
+        <com.plugspace.view.CustomEditText
+            android:id="@+id/etSearch"
+            style="@style/CustomEditTextStyle"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_11ssp" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_close"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorLightGray"
+        android:layout_height="@dimen/_1sdp"/>
+</LinearLayout>

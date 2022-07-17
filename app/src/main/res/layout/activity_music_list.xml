@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".activities.MusicListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_back"
+            tools:ignore="ContentDescription" />
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1">-->
+
+        <LinearLayout
+            android:id="@+id/llHideSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvTitleName"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/my_music_choice"
+                android:textAllCaps="false"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/_18ssp"
+                app:font_text="@string/font_times_bold" />
+
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_search_square"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlShowSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/light_orange_bg_10sdp">
+
+
+            <com.plugspace.view.CustomEditText
+                android:id="@+id/etSearch"
+                style="@style/CustomEditTextStyle"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_11ssp" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_close"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <!--        </RelativeLayout>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorLightGray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvModel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            tools:itemCount="3"
+            tools:listitem="@layout/row_music_list_item" />
+
+        <include layout="@layout/common_empty_list" />
+    </RelativeLayout>
+
+
+</LinearLayout>

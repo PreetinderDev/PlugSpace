@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMyChat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.plugspace.adapters.MyChatListAdapter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rivChatProfileImg"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:riv_oval="true"
+            tools:src="@drawable/ic_profile_placeholder" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvName"
+                style="@style/CustomTextViewStyle"
+                android:gravity="start"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                app:font_text="@string/font_times_bold"
+                tools:text="Nick" />
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvChatMsg"
+                style="@style/CustomTextViewStyle"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_10ssp"
+                app:font_text="@string/font_times_regular"
+                tools:text="@string/hi_how_are_you" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvTimes"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_11ssp"
+                app:font_text="@string/font_times_regular"
+                tools:text="05 min" />
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvHowManyMsg"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/round_orange_gradient"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                app:font_text="@string/font_times_bold"
+                tools:text="@string/_5" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorLightGray" />
+
+</LinearLayout>

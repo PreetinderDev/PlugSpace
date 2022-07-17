@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llEmptyList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.plugspace.view.CustomTextView
+        android:id="@+id/tvEmptyList"
+        style="@style/CustomTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hint_empty_list"
+        android:textColor="@color/colorPrimaryDisable"
+        android:textSize="@dimen/_18ssp"
+        app:font_text="@string/font_times_bold" />
+
+</LinearLayout>

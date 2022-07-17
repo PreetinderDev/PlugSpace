@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".activities.VerifyOTPActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlTopToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/ic_common_bottom_corner_round"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.plugspace.view.CustomTextView
+                android:id="@+id/tvTitle"
+                style="@style/CustomTextViewStyle"
+                android:text="@string/login_process"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_18ssp"
+                app:font_text="@string/font_times_bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="vertical">
+
+            <com.plugspace.view.CustomTextView
+                style="@style/CustomTextViewStyle"
+                android:gravity="start"
+                android:text="@string/verification"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_20ssp"
+                app:font_text="@string/font_times_bold" />
+
+
+            <com.plugspace.view.CustomTextView
+                style="@style/CustomTextViewStyle"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="start"
+                android:singleLine="false"
+                android:text="@string/enter_the_pin_sent_"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                app:font_text="@string/font_times_regular" />
+
+
+            <xyz.farhanfarooqui.pinview.PinView
+                android:id="@+id/pvLoginSignUpVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:importantForAutofill="yes"
+                android:autofillHints=".AUTOFILL_HINT_SMS_OTP"
+                app:pBackground="@drawable/ic_pin_box"
+                app:pBackgroundFilled="@drawable/ic_pin_fill_box"
+                app:pCount="4"
+                app:pFont="font/times.ttf"
+                app:pGap="0dp"
+                app:pSize="@dimen/_70sdp"
+                app:pTextColor="@color/colorOrange"
+                app:pTextColorSelected="@color/colorOrange"
+                app:pTextSize="@dimen/_14ssp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <com.plugspace.view.CustomTextView
+                    style="@style/CustomTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/don_t_receive_the_code"
+                    android:textSize="@dimen/_14ssp"
+                    app:font_text="@string/font_times_regular" />
+
+                <com.plugspace.view.CustomTextView
+                    android:id="@+id/llResend"
+                    style="@style/CustomTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/_6sdp"
+                    android:singleLine="true"
+                    android:text="@string/resend"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/_14ssp"
+                    app:font_text="@string/font_times_bold" />
+
+            </LinearLayout>
+
+            <com.plugspace.view.CustomButton
+                android:id="@+id/btnVerifyCode"
+                style="@style/CustomButtonStyle"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:text="@string/verify_code" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_10sdp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llSlcCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_15sdp">
+
+        <com.plugspace.view.CustomTextView
+            android:id="@+id/tvCategoryName"
+            style="@style/CustomTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textColor="@color/colorOrange"
+            app:font_text="@string/font_times_bold"
+            tools:text="@string/exercise_songs" />
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_check"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/colorLightGray2" />
+
+</LinearLayout>

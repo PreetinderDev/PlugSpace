@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llUserDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlack">
+
+    <LinearLayout
+        android:padding="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/white_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/ic_location" />
+
+        <com.plugspace.view.CustomTextView
+            style="@style/CustomTextViewStyle"
+            android:text="@string/enable_geolocation"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/_18ssp"
+            app:font_text="@string/font_times_bold" />
+
+        <com.plugspace.view.CustomTextView
+            style="@style/CustomTextViewStyle"
+            android:singleLine="false"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/enable_geolocation_"
+            android:textSize="@dimen/_14ssp"
+            app:font_text="@string/font_times_bold" />
+
+        <com.plugspace.view.CustomButton
+            android:id="@+id/btnEnable"
+            style="@style/CustomButtonStyle"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/enable" />
+
+    </LinearLayout>
+
+</LinearLayout>

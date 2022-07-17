@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.HelpActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:paddingTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.plugspace.view.CustomTextView
+                android:layout_marginBottom="@dimen/_15sdp"
+                style="@style/CustomTextViewStyle"
+                android:singleLine="false"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="@string/lorem_lpsum"
+                android:textSize="@dimen/_14ssp"
+                app:font_text="@string/font_times_regular" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
